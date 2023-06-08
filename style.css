@@ -1,0 +1,54 @@
+html, body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.tools .base {
+  padding: 20px;
+}
+
+.tools .batch {
+  padding: 20px;
+}
+
+#fileList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fileEntry {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.fileEntry .number {
+}
+
+.fileEntry .img {
+  width: 200px;
+}
+
+.fileEntry .img img {
+  width: 100%;
+}
+
+.fileEntry .text {
+  width: 200px;
+  height: 100px;
+}
+
+.fileEntry button {
+  width: fit-content;
+  height: fit-content;
+}

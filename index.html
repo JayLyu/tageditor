@@ -1,15 +1,36 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tag Editor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button id="addFilesButton">添加图片和字幕txt</button>
-    <label for="textInput">辅助工具1：输入要添加的文本并向全部输入框中添加该文本</label>
-    <input type="text" id="textInput">
-    <button id="addAllButton">全部添加</button>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="tools">
+      <div class="base">
+        <h3>基础工具</h3>
+        <button id="addFilesButton">添加图片和字幕txt</button>
+      </div>
+      <div class="batch">
+        <h3>批量工具</h3>
+        <p>添加文本到末尾</p>
+        <input type="text" id="textInput">
+        <button id="addAllButton">全部添加</button>
+      </div>
+    </div>
+
     <div id="fileList"></div>
-    <script src="script.js"></script>
+
+    <script src="script.js" async defer></script>
   </body>
 </html>
